@@ -51,6 +51,10 @@ struct TabBarView: View {
                                 }
                     }
                 }
+            }.onChange(of: selectedIndex) { oldIndex, index in
+                withAnimation {
+                    scrollView.scrollTo(index, anchor: .center)
+                }
             }
             .padding()
             .background(Color(.systemGray6))
