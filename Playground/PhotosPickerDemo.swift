@@ -44,7 +44,11 @@ struct PhotosPickerDemo: View {
                      selectionBehavior: .continuousAndOrdered,
                      matching: .images) {
             Label("Select a photo", systemImage: "photo")
-        }.onChange(of: selectedItems) { oldItems, newItems in
+        }
+//                     .photosPickerStyle(.inline)
+            .ignoresSafeArea()
+            .photosPickerAccessoryVisibility(.hidden,edges: .bottom)
+            .onChange(of: selectedItems) { oldItems, newItems in
             selectedImages.removeAll()
             newItems.forEach { newItem in
                 Task {

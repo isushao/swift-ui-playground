@@ -20,7 +20,8 @@ struct ScrollViewDemo: View {
                         .frame(width:350,height: 400)
                         .clipShape(RoundedRectangle(cornerRadius: 25.0))
                         .padding(.horizontal,20)
-                        .containerRelativeFrame(.horizontal)
+                        .containerRelativeFrame(.horizontal)//自动占用所有可用空间，此例占满屏幕的宽度
+                    
                         .scrollTransition(.animated, axis: .horizontal) { content, phase in
                             content
                                 .opacity(phase.isIdentity ? 1.0 : 0.8)
@@ -30,7 +31,7 @@ struct ScrollViewDemo: View {
             }
             .scrollTargetLayout()
         }
-        .scrollTargetBehavior(.viewAligned)
+        .scrollTargetBehavior(.viewAligned) //设置滚动行为 创建分页动画
     }
 }
 

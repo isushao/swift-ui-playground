@@ -17,6 +17,8 @@
 		D86EB0D92C50D9E200B72CE0 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = D86EB0D82C50D9E200B72CE0 /* SwiftUIX */; };
 		D86EB0DB2C50E72D00B72CE0 /* ScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0DA2C50E72D00B72CE0 /* ScrollViewDemo.swift */; };
 		D86EB0DD2C50EB1800B72CE0 /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0DC2C50EB1800B72CE0 /* PhotosPickerDemo.swift */; };
+		D86EB0DF2C50FCCE00B72CE0 /* ScrollPositionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0DE2C50FCCE00B72CE0 /* ScrollPositionDemo.swift */; };
+		D86EB0E12C50FE9800B72CE0 /* SectorMarkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D86EB0CA2C50D9AB00B72CE0 /* PlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D86EB0DA2C50E72D00B72CE0 /* ScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemo.swift; sourceTree = "<group>"; };
 		D86EB0DC2C50EB1800B72CE0 /* PhotosPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerDemo.swift; sourceTree = "<group>"; };
+		D86EB0DE2C50FCCE00B72CE0 /* ScrollPositionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionDemo.swift; sourceTree = "<group>"; };
+		D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorMarkDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				D86EB0B32C50D9AB00B72CE0 /* Preview Content */,
 				D86EB0DA2C50E72D00B72CE0 /* ScrollViewDemo.swift */,
 				D86EB0DC2C50EB1800B72CE0 /* PhotosPickerDemo.swift */,
+				D86EB0DE2C50FCCE00B72CE0 /* ScrollPositionDemo.swift */,
+				D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			files = (
 				D86EB0DB2C50E72D00B72CE0 /* ScrollViewDemo.swift in Sources */,
 				D86EB0DD2C50EB1800B72CE0 /* PhotosPickerDemo.swift in Sources */,
+				D86EB0DF2C50FCCE00B72CE0 /* ScrollPositionDemo.swift in Sources */,
+				D86EB0E12C50FE9800B72CE0 /* SectorMarkDemo.swift in Sources */,
 				D86EB0B02C50D9A900B72CE0 /* ContentView.swift in Sources */,
 				D86EB0AE2C50D9A900B72CE0 /* PlaygroundApp.swift in Sources */,
 			);
