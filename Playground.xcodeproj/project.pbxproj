@@ -14,6 +14,9 @@
 		D86EB0BF2C50D9AB00B72CE0 /* PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0BE2C50D9AB00B72CE0 /* PlaygroundTests.swift */; };
 		D86EB0C92C50D9AB00B72CE0 /* PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0C82C50D9AB00B72CE0 /* PlaygroundUITests.swift */; };
 		D86EB0CB2C50D9AB00B72CE0 /* PlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0CA2C50D9AB00B72CE0 /* PlaygroundUITestsLaunchTests.swift */; };
+		D86EB0D92C50D9E200B72CE0 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = D86EB0D82C50D9E200B72CE0 /* SwiftUIX */; };
+		D86EB0DB2C50E72D00B72CE0 /* ScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0DA2C50E72D00B72CE0 /* ScrollViewDemo.swift */; };
+		D86EB0DD2C50EB1800B72CE0 /* PhotosPickerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0DC2C50EB1800B72CE0 /* PhotosPickerDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		D86EB0C42C50D9AB00B72CE0 /* PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86EB0C82C50D9AB00B72CE0 /* PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUITests.swift; sourceTree = "<group>"; };
 		D86EB0CA2C50D9AB00B72CE0 /* PlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D86EB0DA2C50E72D00B72CE0 /* ScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemo.swift; sourceTree = "<group>"; };
+		D86EB0DC2C50EB1800B72CE0 /* PhotosPickerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPickerDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86EB0D92C50D9E200B72CE0 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,8 @@
 				D86EB0AF2C50D9A900B72CE0 /* ContentView.swift */,
 				D86EB0B12C50D9AB00B72CE0 /* Assets.xcassets */,
 				D86EB0B32C50D9AB00B72CE0 /* Preview Content */,
+				D86EB0DA2C50E72D00B72CE0 /* ScrollViewDemo.swift */,
+				D86EB0DC2C50EB1800B72CE0 /* PhotosPickerDemo.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = Playground;
+			packageProductDependencies = (
+				D86EB0D82C50D9E200B72CE0 /* SwiftUIX */,
+			);
 			productName = Playground;
 			productReference = D86EB0AA2C50D9A900B72CE0 /* Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = D86EB0A12C50D9A900B72CE0;
+			packageReferences = (
+				D86EB0D72C50D9E200B72CE0 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = D86EB0AB2C50D9A900B72CE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86EB0DB2C50E72D00B72CE0 /* ScrollViewDemo.swift in Sources */,
+				D86EB0DD2C50EB1800B72CE0 /* PhotosPickerDemo.swift in Sources */,
 				D86EB0B02C50D9A900B72CE0 /* ContentView.swift in Sources */,
 				D86EB0AE2C50D9A900B72CE0 /* PlaygroundApp.swift in Sources */,
 			);
@@ -588,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D86EB0D72C50D9E200B72CE0 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D86EB0D82C50D9E200B72CE0 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D86EB0D72C50D9E200B72CE0 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D86EB0A22C50D9A900B72CE0 /* Project object */;
 }
