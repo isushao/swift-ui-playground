@@ -7,65 +7,16 @@
 
 import SwiftUI
 
-struct ZoomableViewModifier: ViewModifier {
-    @State private var translation: CGSize = .zero
-    @State private var scale: CGFloat = 1.0
-    @State private var doubleTapScale: CGFloat = 1.0
-    
-    func body(content: Content) -> some View {
-        content
-            .offset(translation)
-            .scaleEffect(scale * doubleTapScale)
-            .gesture(
-                DragGesture()
-                    .onChanged { value in
-                        translation = value.translation
-                    }
-                    .onEnded { value in
-                        if abs(value.translation.height) > 100 || abs(value.translation.width) > 100 {
-                            withAnimation(.spring()) {
-                                translation = .zero
-                                scale = 1.0
-                                doubleTapScale = 1.0
-                            }
-                        } else {
-                            withAnimation(.spring()) {
-                                translation = .zero
-                            }
-                        }
-                    }
-            )
-            .gesture(
-                MagnificationGesture()
-                    .onChanged { value in
-                        scale = value
-                    }
-                    .onEnded { value in
-                        withAnimation {
-                            scale = 1.0
-                        }
-                    }
-            )
-            .onTapGesture(count: 2) {
-                withAnimation {
-                    doubleTapScale = doubleTapScale == 1.0 ? 2.0 : 1.0
-                }
-            }
-    }
-}
-
-extension View {
-    func zoomable() -> some View {
-        self.modifier(ZoomableViewModifier())
-    }
-}
-
 struct ZoomTransitionDemo: View {
-    let samplePhotos = (1...6).map { Photo(name: "\($0)") }
+    let samplePhotos = (1...6).map { Photo(id:$0 ,name: "\($0)") }
     
     @Namespace private var namespace
     @State private var selectedPhoto: Photo? = nil
-    
+    @State private var translation: CGSize = .zero
+    @State private var scale: CGFloat = 1.0
+    @State private var doubleTapScale: CGFloat = 1.0
+    @State private var backgroundOpacity: Double = 1 // 初始背景透明度
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -81,6 +32,10 @@ struct ZoomTransitionDemo: View {
                             .onTapGesture {
                                 withAnimation(.spring()) {
                                     selectedPhoto = photo
+                                    translation = .zero  // Reset translation to zero when a new photo is selected
+                                    scale = 1.0          // Reset scale to 1.0 when a new photo is selected
+                                    doubleTapScale = 1.0 // Reset double tap scale to 1.0 when a new photo is selected
+                                    backgroundOpacity = 1 // Reset background opacity when a new photo is selected
                                 }
                             }
                     }
@@ -90,22 +45,54 @@ struct ZoomTransitionDemo: View {
             .overlay(
                 Group {
                     if let selectedPhoto = selectedPhoto {
-                        ZStack(alignment: .topTrailing) {
-                            Color.black.opacity(0.5)
+                        ZStack(alignment: .center) {
+                            Color.black
+                                .opacity(backgroundOpacity) // 设置背景透明度
                                 .edgesIgnoringSafeArea(.all)
-                                .onTapGesture {
-                                    withAnimation(.spring()) {
-                                        self.selectedPhoto = nil
-                                    }
-                                }
-                            
+                              
+
                             Image(selectedPhoto.name)
                                 .resizable()
                                 .scaledToFit()
                                 .matchedGeometryEffect(id: selectedPhoto.id, in: namespace)
-                                .zoomable()
+                                .offset(translation)
+                                .scaleEffect(scale * doubleTapScale)
+                                .gesture(
+                                    DragGesture()
+                                        .onChanged { value in
+                                            translation = value.translation
+                                            backgroundOpacity = 0.5
+                                        }
+                                        .onEnded { value in
+                                            if abs(value.translation.height) > 100 || abs(value.translation.width) > 100 {
+                                                withAnimation(.spring()) {
+                                                    self.selectedPhoto = nil
+                                                }
+                                            } else {
+                                                withAnimation(.spring()) {
+                                                    translation = .zero
+                                                    backgroundOpacity = 1
+                                                }
+                                            }
+                                        }
+                                )
+                                .gesture(
+                                    MagnificationGesture()
+                                        .onChanged { value in
+                                            scale = value
+                                        }
+                                        .onEnded { value in
+                                            withAnimation {
+                                                scale = 1.0
+                                            }
+                                        }
+                                )
+                                .onTapGesture(count: 2) {
+                                    withAnimation {
+                                        doubleTapScale = doubleTapScale == 1.0 ? 2.0 : 1.0
+                                    }
+                                }
                                 .padding()
-                                .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
                         }
                     }
                 }
@@ -115,7 +102,7 @@ struct ZoomTransitionDemo: View {
 }
 
 struct Photo: Identifiable {
-    let id = UUID()
+    let id : Int
     let name: String
 }
 
