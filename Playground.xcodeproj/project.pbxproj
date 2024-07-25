@@ -21,6 +21,7 @@
 		D86EB0E12C50FE9800B72CE0 /* SectorMarkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */; };
 		D86EB0E32C51089100B72CE0 /* TabViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0E22C51089100B72CE0 /* TabViewDemo.swift */; };
 		D8E81FAD2C51E05D0009F524 /* ZoomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FAC2C51E05D0009F524 /* ZoomTransitionDemo.swift */; };
+		D8E81FB12C51F7780009F524 /* NavigationStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FB02C51F7780009F524 /* NavigationStackDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorMarkDemo.swift; sourceTree = "<group>"; };
 		D86EB0E22C51089100B72CE0 /* TabViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewDemo.swift; sourceTree = "<group>"; };
 		D8E81FAC2C51E05D0009F524 /* ZoomTransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionDemo.swift; sourceTree = "<group>"; };
+		D8E81FB02C51F7780009F524 /* NavigationStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */,
 				D86EB0E22C51089100B72CE0 /* TabViewDemo.swift */,
 				D8E81FAC2C51E05D0009F524 /* ZoomTransitionDemo.swift */,
+				D8E81FB02C51F7780009F524 /* NavigationStackDemo.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				D86EB0DF2C50FCCE00B72CE0 /* ScrollPositionDemo.swift in Sources */,
 				D86EB0E12C50FE9800B72CE0 /* SectorMarkDemo.swift in Sources */,
 				D86EB0B02C50D9A900B72CE0 /* ContentView.swift in Sources */,
+				D8E81FB12C51F7780009F524 /* NavigationStackDemo.swift in Sources */,
 				D86EB0AE2C50D9A900B72CE0 /* PlaygroundApp.swift in Sources */,
 				D86EB0E32C51089100B72CE0 /* TabViewDemo.swift in Sources */,
 			);
