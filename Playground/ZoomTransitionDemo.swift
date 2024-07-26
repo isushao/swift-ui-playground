@@ -61,7 +61,8 @@ struct ZoomTransitionDemo: View {
                                     DragGesture()
                                         .onChanged { value in
                                             translation = value.translation
-                                            backgroundOpacity = 0.5
+                                            let distance = sqrt(pow(value.translation.width, 2) + pow(value.translation.height, 2))
+                                            backgroundOpacity = max(0,1 - Double(distance) / 200)
                                         }
                                         .onEnded { value in
                                             if abs(value.translation.height) > 100 || abs(value.translation.width) > 100 {
