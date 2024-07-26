@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            ZoomTransitionDemo()
+            ZoomTransitionV2()
                 .navigationTitle("训练场")
         }
     }
