@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83234D42C5B329300C2ED7C /* ZoomTransitionV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83234D32C5B329300C2ED7C /* ZoomTransitionV3.swift */; };
 		D86EB0AE2C50D9A900B72CE0 /* PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0AD2C50D9A900B72CE0 /* PlaygroundApp.swift */; };
 		D86EB0B02C50D9A900B72CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0AF2C50D9A900B72CE0 /* ContentView.swift */; };
 		D86EB0B22C50D9AB00B72CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86EB0B12C50D9AB00B72CE0 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		D86EB0DF2C50FCCE00B72CE0 /* ScrollPositionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0DE2C50FCCE00B72CE0 /* ScrollPositionDemo.swift */; };
 		D86EB0E12C50FE9800B72CE0 /* SectorMarkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0E02C50FE9800B72CE0 /* SectorMarkDemo.swift */; };
 		D86EB0E32C51089100B72CE0 /* TabViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0E22C51089100B72CE0 /* TabViewDemo.swift */; };
+		D8C7B53B2C5A1D7E009BEB53 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D8C7B53A2C5A1D7E009BEB53 /* SDWebImageSwiftUI */; };
 		D8E81FAD2C51E05D0009F524 /* ZoomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FAC2C51E05D0009F524 /* ZoomTransitionDemo.swift */; };
 		D8E81FB12C51F7780009F524 /* NavigationStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FB02C51F7780009F524 /* NavigationStackDemo.swift */; };
 		D8E81FB32C521ABF0009F524 /* MatchedGeometryEffectMultiElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FB22C521ABF0009F524 /* MatchedGeometryEffectMultiElement.swift */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D83234D32C5B329300C2ED7C /* ZoomTransitionV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionV3.swift; sourceTree = "<group>"; };
 		D86EB0AA2C50D9A900B72CE0 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86EB0AD2C50D9A900B72CE0 /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
 		D86EB0AF2C50D9A900B72CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C7B53B2C5A1D7E009BEB53 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,7 @@
 				D8E81FB02C51F7780009F524 /* NavigationStackDemo.swift */,
 				D8E81FB22C521ABF0009F524 /* MatchedGeometryEffectMultiElement.swift */,
 				D8EFDF7F2C537A060039C973 /* ZoomTransitionV2.swift */,
+				D83234D32C5B329300C2ED7C /* ZoomTransitionV3.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			);
 			name = Playground;
 			packageProductDependencies = (
+				D8C7B53A2C5A1D7E009BEB53 /* SDWebImageSwiftUI */,
 			);
 			productName = Playground;
 			productReference = D86EB0AA2C50D9A900B72CE0 /* Playground.app */;
@@ -245,6 +251,7 @@
 			);
 			mainGroup = D86EB0A12C50D9A900B72CE0;
 			packageReferences = (
+				D8C7B5392C5A1D6A009BEB53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = D86EB0AB2C50D9A900B72CE0 /* Products */;
 			projectDirPath = "";
@@ -290,6 +297,7 @@
 			files = (
 				D8E81FAD2C51E05D0009F524 /* ZoomTransitionDemo.swift in Sources */,
 				D86EB0DB2C50E72D00B72CE0 /* ScrollViewDemo.swift in Sources */,
+				D83234D42C5B329300C2ED7C /* ZoomTransitionV3.swift in Sources */,
 				D86EB0DD2C50EB1800B72CE0 /* PhotosPickerDemo.swift in Sources */,
 				D86EB0DF2C50FCCE00B72CE0 /* ScrollPositionDemo.swift in Sources */,
 				D8E81FB32C521ABF0009F524 /* MatchedGeometryEffectMultiElement.swift in Sources */,
@@ -628,6 +636,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8C7B5392C5A1D6A009BEB53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8C7B53A2C5A1D7E009BEB53 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C7B5392C5A1D6A009BEB53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D86EB0A22C50D9A900B72CE0 /* Project object */;
 }
