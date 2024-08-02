@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D83234D42C5B329300C2ED7C /* ZoomTransitionV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83234D32C5B329300C2ED7C /* ZoomTransitionV3.swift */; };
+		D83234D62C5C70E800C2ED7C /* NavigationStackDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83234D52C5C70E800C2ED7C /* NavigationStackDemo2.swift */; };
+		D83234DF2C5CA42700C2ED7C /* NavigationLinkDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83234DE2C5CA42700C2ED7C /* NavigationLinkDemo.swift */; };
+		D85AF2552C5CC57D0010D3FB /* TabviewDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85AF2542C5CC57D0010D3FB /* TabviewDemo2.swift */; };
 		D86EB0AE2C50D9A900B72CE0 /* PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0AD2C50D9A900B72CE0 /* PlaygroundApp.swift */; };
 		D86EB0B02C50D9A900B72CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86EB0AF2C50D9A900B72CE0 /* ContentView.swift */; };
 		D86EB0B22C50D9AB00B72CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86EB0B12C50D9AB00B72CE0 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		D83234D32C5B329300C2ED7C /* ZoomTransitionV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionV3.swift; sourceTree = "<group>"; };
+		D83234D52C5C70E800C2ED7C /* NavigationStackDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemo2.swift; sourceTree = "<group>"; };
+		D83234DE2C5CA42700C2ED7C /* NavigationLinkDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkDemo.swift; sourceTree = "<group>"; };
+		D85AF2542C5CC57D0010D3FB /* TabviewDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabviewDemo2.swift; sourceTree = "<group>"; };
 		D86EB0AA2C50D9A900B72CE0 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86EB0AD2C50D9A900B72CE0 /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
 		D86EB0AF2C50D9A900B72CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		D86EB0AC2C50D9A900B72CE0 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				D83234D52C5C70E800C2ED7C /* NavigationStackDemo2.swift */,
 				D86EB0AD2C50D9A900B72CE0 /* PlaygroundApp.swift */,
 				D86EB0AF2C50D9A900B72CE0 /* ContentView.swift */,
 				D86EB0B12C50D9AB00B72CE0 /* Assets.xcassets */,
@@ -130,6 +137,8 @@
 				D8E81FB22C521ABF0009F524 /* MatchedGeometryEffectMultiElement.swift */,
 				D8EFDF7F2C537A060039C973 /* ZoomTransitionV2.swift */,
 				D83234D32C5B329300C2ED7C /* ZoomTransitionV3.swift */,
+				D83234DE2C5CA42700C2ED7C /* NavigationLinkDemo.swift */,
+				D85AF2542C5CC57D0010D3FB /* TabviewDemo2.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -295,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83234DF2C5CA42700C2ED7C /* NavigationLinkDemo.swift in Sources */,
 				D8E81FAD2C51E05D0009F524 /* ZoomTransitionDemo.swift in Sources */,
+				D83234D62C5C70E800C2ED7C /* NavigationStackDemo2.swift in Sources */,
 				D86EB0DB2C50E72D00B72CE0 /* ScrollViewDemo.swift in Sources */,
 				D83234D42C5B329300C2ED7C /* ZoomTransitionV3.swift in Sources */,
+				D85AF2552C5CC57D0010D3FB /* TabviewDemo2.swift in Sources */,
 				D86EB0DD2C50EB1800B72CE0 /* PhotosPickerDemo.swift in Sources */,
 				D86EB0DF2C50FCCE00B72CE0 /* ScrollPositionDemo.swift in Sources */,
 				D8E81FB32C521ABF0009F524 /* MatchedGeometryEffectMultiElement.swift in Sources */,

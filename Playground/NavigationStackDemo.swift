@@ -62,10 +62,6 @@ struct NavigationStackDemo: View {
             }
             .navigationTitle("Color")
             
-        }.onAppear {
-            path.append(.indigo)
-            path.append(.yellow)
-            path.append(.green)
         }
         
         Button {

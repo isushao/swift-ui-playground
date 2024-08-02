@@ -40,12 +40,11 @@ struct PhotosPickerDemo: View {
         }
         
         PhotosPicker(selection: $selectedItems,
-                     maxSelectionCount: 5,
+                     maxSelectionCount: 3,
                      selectionBehavior: .continuousAndOrdered,
                      matching: .images) {
             Label("Select a photo", systemImage: "photo")
         }
-//                     .photosPickerStyle(.inline)
             .ignoresSafeArea()
             .photosPickerAccessoryVisibility(.hidden,edges: .bottom)
             .onChange(of: selectedItems) { oldItems, newItems in
